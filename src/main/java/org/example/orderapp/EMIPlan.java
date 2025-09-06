@@ -11,9 +11,15 @@ public class EMIPlan {
         this.totalPayable = totalPayable;
     }
 
-    public int getMonths() { return months; }
-    public double getMonthlyAmount() { return monthlyAmount; }
-    public double getTotalPayable() { return totalPayable; }
+    public int getMonths() {
+        return months;
+    }
+    public double getMonthlyAmount() {
+        return monthlyAmount;
+    }
+    public double getTotalPayable() {
+        return totalPayable;
+    }
 
     @Override
     public String toString() {
