@@ -2,20 +2,28 @@ package org.example.collection;
 
 public class Guest {
     private String name;
-    private String ContactNumber;
-    public void guest(String name, String contactNumber) {
+    private String number;
+
+    // Proper constructor
+    public Guest(String name, String number) {
         this.name = name;
-        this.ContactNumber = contactNumber;
+        this.number = number;
     }
+
+    // Default constructor
+    public Guest() {
+    }
+
     public String getName() {
         return name;
     }
+
     public String getContactNumber() {
-        return ContactNumber;
+        return number;
     }
 
     @Override
     public String toString() {
-        return "Guest [name=" + name + ", ContactNumber=" + ContactNumber + "]";
+        return "Guest [name=" + name + ", ContactNumber=" + number + "]";
     }
 }
